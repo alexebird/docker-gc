@@ -15,7 +15,8 @@ RUN apk --update add bash curl \
   && rm -rf /var/cache/apk/*
 
 COPY ./docker-gc /docker-gc
+COPY ./sleep-wrapper.sh /sleep-wrapper.sh
 
 VOLUME /var/lib/docker-gc
 
-CMD ["/docker-gc"]
+CMD ["/sleep-wrapper.sh", "/docker-gc"]

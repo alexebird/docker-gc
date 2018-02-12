@@ -1,5 +1,9 @@
 # docker-gc
 
+## Stride Changes
+
+- wrap everything in a loop.
+
 * [Building](#building)
 * [Installing](#installing)
 * [Usage](#usage)
